@@ -1,2 +1,5 @@
 ng new angular-demo --skip-install
+ng serve --open
+ng g
 ng g component components/news
+ng g service services/storage
