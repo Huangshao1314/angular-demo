@@ -28,6 +28,10 @@ import { HttpserviceService } from './services/httpservice.service';
 import { LifecycleComponent } from './components/lifecycle/lifecycle.component';
 import { Rxjs6Component } from './components/rxjs6/rxjs6.component';
 import { GetPostJsonpAxiosComponent } from './components/get-post-jsonp-axios/get-post-jsonp-axios.component';
+import { BinddataComponent } from './components/binddata/binddata.component';
+import { NewscontentComponent } from './components/newscontent/newscontent.component';
+import { ProductComponent } from './components/product/product.component';
+import { ProductcontentComponent } from './components/productcontent/productcontent.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +45,11 @@ import { GetPostJsonpAxiosComponent } from './components/get-post-jsonp-axios/ge
     TransitionComponent,
     LifecycleComponent,
     Rxjs6Component,
-    GetPostJsonpAxiosComponent
+    GetPostJsonpAxiosComponent,
+    BinddataComponent,
+    NewscontentComponent,
+    ProductComponent,
+    ProductcontentComponent
   ],
   imports: [
     BrowserModule,

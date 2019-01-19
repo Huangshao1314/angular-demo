@@ -13,6 +13,10 @@ import { Rxjs6Component } from './components/rxjs6/rxjs6.component';
 import { SearchComponent } from './components/search/search.component';
 import { TodolistComponent } from './components/todolist/todolist.component';
 import { TransitionComponent } from './components/transition/transition.component';
+import { BinddataComponent } from './components/binddata/binddata.component';
+import { NewscontentComponent } from './components/newscontent/newscontent.component';
+import { ProductComponent } from './components/product/product.component';
+import { ProductcontentComponent } from './components/productcontent/productcontent.component';
 
 const routes: Routes = [
 
@@ -53,6 +57,22 @@ const routes: Routes = [
   {
 
     path:'transition',component:TransitionComponent
+  },
+  {
+
+    path:'binddata',component:BinddataComponent
+  },
+  {
+
+    path:'newscontent/:aid',component:NewscontentComponent
+  },
+  {
+
+    path:'product',component:ProductComponent
+  },
+  {
+
+    path:'productcontent/:aid',component:ProductcontentComponent
   },
   //匹配不到路由的时候加载的组件 或者跳转的路由
   {
