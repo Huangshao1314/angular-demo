@@ -16,6 +16,10 @@ import { TransitionComponent } from './components/transition/transition.componen
 
 //引入并且配置服务
 import { StorageService } from './services/storage.service';
+import { RequestService } from './services/request.service';
+
+import { LifecycleComponent } from './components/lifecycle/lifecycle.component';
+import { Rxjs6Component } from './components/rxjs6/rxjs6.component';
 
 @NgModule({
   declarations: [
@@ -26,13 +30,15 @@ import { StorageService } from './services/storage.service';
     SearchComponent,
     TodolistComponent,
     HeaderComponent,
-    TransitionComponent
+    TransitionComponent,
+    LifecycleComponent,
+    Rxjs6Component
   ],
   imports: [
     BrowserModule,
     FormsModule
   ],
-  providers: [StorageService],
+  providers: [StorageService,RequestService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
