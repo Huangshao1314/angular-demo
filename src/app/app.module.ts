@@ -7,6 +7,9 @@ import { FormsModule } from '@angular/forms';
 //引入HttpClientModule
 import { HttpClientModule,HttpClientJsonpModule} from '@angular/common/http';
 
+//引入路由模块
+import { AppRoutingModule } from './app-routing.module';
+
 import { AppComponent } from './app.component';
 import { NewsComponent } from './components/news/news.component';
 import { HomeComponent } from './components/home/home.component';
@@ -44,7 +47,8 @@ import { GetPostJsonpAxiosComponent } from './components/get-post-jsonp-axios/ge
     BrowserModule,
     FormsModule,
     HttpClientModule,
-    HttpClientJsonpModule
+    HttpClientJsonpModule,
+    AppRoutingModule
   ],
   providers: [StorageService,RequestService,HttpserviceService],
   bootstrap: [AppComponent]

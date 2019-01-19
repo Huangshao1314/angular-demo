@@ -8,4 +8,34 @@
 <!-- <app-transition></app-transition> -->
 <!-- <app-lifecycle></app-lifecycle> -->
 <!-- <app-rxjs6></app-rxjs6> -->
-<app-get-post-jsonp-axios></app-get-post-jsonp-axios>
+<!-- <app-get-post-jsonp-axios></app-get-post-jsonp-axios> -->
+<header class="header">
+
+
+  <!-- <a [routerLink]="[ '/home' ]">首页</a>
+
+
+  <a routerLink='/news'>新闻组件</a>
+
+
+  <a [routerLink]="[ '/product']">商品页面</a> -->
+
+
+<a [routerLink]="[ '/home' ]" routerLinkActive="active">首页</a>
+
+<a [routerLink]="[ '/news' ]" routerLinkActive="active">新闻组件</a>
+<a [routerLink]="[ '/todolist' ]" routerLinkActive="active">todolist组件</a>
+<a [routerLink]="[ '/transition' ]" routerLinkActive="active">transition组件</a>
+<a [routerLink]="[ '/search' ]" routerLinkActive="active">搜索组件</a>
+<a [routerLink]="[ '/form' ]" routerLinkActive="active">表单组件</a>
+<a [routerLink]="[ '/lifecycle' ]" routerLinkActive="active">生命周期组件</a>
+<a [routerLink]="[ '/rxjs6' ]" routerLinkActive="active">rxjs6组件</a>
+<a [routerLink]="[ '/getPostJsonpAxios' ]" routerLinkActive="active">异步请求组件</a>
+
+
+
+
+</header>
+
+
+<router-outlet></router-outlet>
