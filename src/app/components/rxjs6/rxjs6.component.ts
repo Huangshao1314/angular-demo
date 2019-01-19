@@ -136,7 +136,7 @@ export class Rxjs6Component implements OnInit {
      streemNum.pipe(
        filter((value)=>{
 
-          if(value%2==0){
+          if(value%2==0 && value<10){
             return true;
           }
       }),
@@ -146,7 +146,7 @@ export class Rxjs6Component implements OnInit {
        })
      )      
      .subscribe((data)=>{
-         console.log(data);
+         console.log("10以内偶数的平方"+data);
      })
      
 
