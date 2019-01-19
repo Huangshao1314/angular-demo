@@ -32,6 +32,11 @@ import { BinddataComponent } from './components/binddata/binddata.component';
 import { NewscontentComponent } from './components/newscontent/newscontent.component';
 import { ProductComponent } from './components/product/product.component';
 import { ProductcontentComponent } from './components/productcontent/productcontent.component';
+import { SettingComponent } from './components/home/setting/setting.component';
+import { WelcomeComponent } from './components/home/welcome/welcome.component';
+import { PlistComponent } from './components/product/plist/plist.component';
+import { PcateComponent } from './components/product/pcate/pcate.component';
+import { DirectiveComponent } from './components/directive/directive.component';
 
 @NgModule({
   declarations: [
@@ -49,7 +54,12 @@ import { ProductcontentComponent } from './components/productcontent/productcont
     BinddataComponent,
     NewscontentComponent,
     ProductComponent,
-    ProductcontentComponent
+    ProductcontentComponent,
+    DirectiveComponent,
+    SettingComponent,
+    WelcomeComponent,
+    PlistComponent,
+    PcateComponent
   ],
   imports: [
     BrowserModule,

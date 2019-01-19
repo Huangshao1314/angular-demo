@@ -17,12 +17,24 @@ import { BinddataComponent } from './components/binddata/binddata.component';
 import { NewscontentComponent } from './components/newscontent/newscontent.component';
 import { ProductComponent } from './components/product/product.component';
 import { ProductcontentComponent } from './components/productcontent/productcontent.component';
+import { DirectiveComponent } from './components/directive/directive.component';
+import { SettingComponent } from './components/home/setting/setting.component';
+import { WelcomeComponent } from './components/home/welcome/welcome.component';
+import { PlistComponent } from './components/product/plist/plist.component';
+import { PcateComponent } from './components/product/pcate/pcate.component';
 
 const routes: Routes = [
 
   {
 
-    path:'home',component:HomeComponent
+    path:'home',component:HomeComponent,
+    children:[{
+      path:'setting',component:SettingComponent
+    },{
+      path:'welcome',component:WelcomeComponent
+    },{
+      path:'**',redirectTo:'welcome'
+    }]
   },
 
   {
@@ -68,12 +80,24 @@ const routes: Routes = [
   },
   {
 
-    path:'product',component:ProductComponent
+    path:'product',component:ProductComponent,
+    children:[{
+      path:'plist',component:PlistComponent
+    },{
+      path:'pcate',component:PcateComponent
+    },{
+      path:'**',redirectTo:'pcate'
+    }]
   },
   {
 
     path:'productcontent/:aid',component:ProductcontentComponent
   },
+  {
+
+    path:'directive',component:DirectiveComponent
+  },
+  
   //匹配不到路由的时候加载的组件 或者跳转的路由
   {
 
