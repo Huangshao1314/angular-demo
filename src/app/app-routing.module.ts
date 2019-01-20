@@ -97,6 +97,18 @@ const routes: Routes = [
 
     path:'directive',component:DirectiveComponent
   },
+  {
+
+    path:'user',loadChildren:'./module/user/user.module#UserModule'
+  },
+  {
+
+    path:'article',loadChildren:'./module/article/article.module#ArticleModule'
+  },
+  {
+
+    path:'productModule',loadChildren:'./module/product/product.module#ProductModule'
+  },
   
   //匹配不到路由的时候加载的组件 或者跳转的路由
   {
